@@ -76,7 +76,7 @@ def is_psychology_related(prompt):
 # Streamlit app layout
 st.title("Chat Psychologist")
 api_key = st.text_input("Enter your API key:", type="password")
-prompt = st.text_area("Enter your psychology or DSM-5 related prompt here:")
+prompt = st.text_area("Enter your prompt here:")
 if st.button("Process"):
     if not api_key:
         st.error("Please provide an API key.")
